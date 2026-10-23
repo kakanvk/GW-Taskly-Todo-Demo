@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: #fff;
+  --color-muted: #f1f2f7;
+  --color-muted-foreground: #72758a;
+  --color-destructive: #dc3545;
+  --color-input: #e1e4ec;
+  --color-ring: #7c5cdd;
+  --color-border: #e8eaf0;
+  --color-popover: #ffffff;
+  --color-popover-foreground: var(--foreground);
+  --color-accent: #f1edfb;
+  --color-accent-foreground: #5935b2;
+  --color-secondary: #f1f2f7;
+  --color-secondary-foreground: var(--foreground);
+  --color-destructive-foreground: #ffffff;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --font-sans: 'Be Vietnam Pro', sans-serif;
+}
+:root {
+  --background: #ffffff;
+  --foreground: #262638;
+  --primary: #7753d6;
+  --popover: #fff;
+  --popover-foreground: #262638;
+  --border: #e8eaf0;
+  --radius: 0.75rem;
+  font-family: 'Be Vietnam Pro', system-ui, sans-serif;
+  color: var(--foreground);
+  background: #f7f8fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  button:not(:disabled),
+  select {
+    cursor: pointer;
+  }
+  body {
+    margin: 0;
+    min-width: 320px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+@layer components {
+  .app-shell {
+    @apply mx-auto min-h-screen w-full max-w-[640px] px-4 py-5 sm:px-6 sm:py-10;
+  }
+  .field-label {
+    @apply mb-2 block text-sm font-medium;
+  }
+  .priority-pill {
+    @apply inline-flex items-center gap-1.5 rounded-md px-2 py-1 text-[11px] font-medium;
+  }
+  .priority-high {
+    @apply bg-rose-50 text-rose-600;
+  }
+  .priority-medium {
+    @apply bg-amber-50 text-amber-700;
+  }
+  .priority-low {
+    @apply bg-sky-50 text-sky-600;
+  }
+  .empty-state {
+    @apply rounded-xl border border-dashed bg-white px-4 py-9 text-center;
+  }
+}

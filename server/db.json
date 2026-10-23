@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": "demo-1",
+      "title": "Hoàn thiện giao diện Todo List",
+      "description": "Xây dựng layout responsive, thống kê và các trạng thái hiển thị bằng shadcn/ui.",
+      "priority": "high",
+      "dueDate": "",
+      "completed": true,
+      "createdAt": "2026-10-20T08:00:00.000Z",
+      "updatedAt": "2026-10-23T06:51:33.317Z"
+    },
+    {
+      "id": "demo-2",
+      "title": "Kết nối API với JSON Server",
+      "description": "Thực hành GET, POST, PATCH và DELETE. Kiểm tra dữ liệu sau khi tải lại trang.",
+      "priority": "medium",
+      "dueDate": "2026-10-29",
+      "completed": false,
+      "createdAt": "2026-10-20T07:00:00.000Z",
+      "updatedAt": "2026-10-23T07:51:41.587Z"
+    },
+    {
+      "id": "demo-3",
+      "title": "Phác thảo cấu trúc dự án",
+      "description": "Tách components, hooks, API và types theo tính năng.",
+      "priority": "low",
+      "dueDate": "",
+      "completed": false,
+      "createdAt": "2026-10-20T06:00:00.000Z",
+      "updatedAt": "2026-10-22T08:05:41.971Z"
+    }
+  ]
+}
